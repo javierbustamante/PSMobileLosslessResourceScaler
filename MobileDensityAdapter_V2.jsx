@@ -66,6 +66,8 @@ doc = app.activeDocument;
 doc.changeMode(ChangeMode.RGB);  
 
 var PNGOptions = new PNGSaveOptions();
+PNGOptions.compression=9;
+PNGOptions.interlaced=false;
 
 history = doc.historyStates.length - 1;
 
